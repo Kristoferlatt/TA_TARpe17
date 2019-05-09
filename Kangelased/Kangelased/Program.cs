@@ -30,6 +30,12 @@ namespace Kangelased
         
         static void Main(string[] args)
         {
+            LaeKangelased("kangelased.txt");
+            foreach (Kangelane tegelane in Kangelased)
+            {
+                Console.WriteLine(tegelane);
+                Console.WriteLine("Ohus on 1000 inimest. Päästa " + tegelane.Päästa(1000));
+            }
 
         }
     }
