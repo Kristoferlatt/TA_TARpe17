@@ -10,7 +10,7 @@ namespace Kangelased
     {
         private double _Osavus;
 
-        public Superkangelane(string Nimi, string Asukoht) : base(Nimi, Asukoht)
+        public Superkangelane(string Nimi, string Asukoht, string SuperNimi, string V6ime ) : base(Nimi, Asukoht, SuperNimi, V6ime)
         {
             Random r = new Random();
             _Osavus = r.Next(1, 5) + r.NextDouble();
