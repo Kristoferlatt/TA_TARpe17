@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Kangelased
 {
-    class Kangelane
+    abstract class Kangelane
     {
         private string _Nimi;
         private string _SuperNimi;
@@ -36,5 +36,18 @@ namespace Kangelased
         {
             return Nimi + " hoiab " + Asukoht + " turvalisena. " + "Ta võime on" + V6ime ;
         }
+        public string AnnaNimi()
+        {
+            return Nimi;
+        }
+        public string AnnaSuperNimi()
+        {
+            return SuperNimi;
+        }
+        public string AnnaV6ime()
+        {
+            return V6ime;
+        }
+        public abstract void V6idukõne();
     }
 }
